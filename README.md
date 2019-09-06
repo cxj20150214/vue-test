@@ -4,10 +4,12 @@
 
 
 ![image](https://github.com/cxj20150214/vue-test/blob/master/src/img/wxjt.png?raw=true)
+
+![image](https://github.com/cxj20150214/vue-test/blob/master/src/img/wxjt2.png?raw=true)
 ## Build Setup
 
 ``` bash
-# install dependencies
+# 安装步骤
 npm install
 
 # serve with hot reload at localhost:8080
