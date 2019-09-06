@@ -1,6 +1,6 @@
 # official_website_html
 
-> A Vue.js project
+> 基于vue-cli，vuex，vue-router，element-UI，vue-axios，animate动画搭建的公司官网
 
 ## Build Setup
 
