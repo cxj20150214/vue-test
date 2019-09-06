@@ -1,7 +1,7 @@
 # 叁猿网络科技有限公司-官网
 
 > 基于vue-cli，vuex，vue-router，vue-axios，Element-ui，animate动画搭建的官网项目
-![image](http://dev-adminapi.bzffs.cc/api/file?id=201909062830801831?raw=true)
+![image](http://dev-adminapi.bzffs.cc/api/file?id=201909062830801831.png?raw=true)
 ## Build Setup
 
 ``` bash
