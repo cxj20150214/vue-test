@@ -1,6 +1,6 @@
-# 叁猿网络科技有限公司-官网
+# official_website_html
 
-> 基于vue-cli，vuex，vue-router，element-UI，vue-axios，animate动画搭建的公司官网
+> A Vue.js project
 
 ## Build Setup
 
