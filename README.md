@@ -6,10 +6,10 @@
 ![image](https://github.com/cxj20150214/vue-test/blob/master/src/img/wxjt.png?raw=true)
 
 ![image](https://github.com/cxj20150214/vue-test/blob/master/src/img/wxjt2.png?raw=true)
-## Build Setup
+## 启动项目
 
 ``` bash
-# 安装步骤
+# 安装依赖包
 npm install
 
 # serve with hot reload at localhost:8080
