@@ -1,6 +1,8 @@
 # 叁猿网络科技有限公司-官网
 
 > 基于vue-cli，vuex，vue-router，vue-axios，Element-ui，animate动画搭建的官网项目
+
+
 ![image](https://github.com/cxj20150214/vue-test/blob/master/src/img/wxjt.png?raw=true)
 ## Build Setup
 
