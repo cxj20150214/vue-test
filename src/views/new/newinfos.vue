@@ -3,8 +3,7 @@
     <h1>{{news.title}}</h1>
     <p class="new_p1"><span>阅读量：{{news.clicknum}}</span><span class="fr">发布时间：{{news.created_at}}</span></p>
     <div class="new_img"><img :src="news.thumbnail_url" /></div>
-    <div class="new_conti">
-       {{news.content}}
+    <div class="new_conti" v-html="news.content">
     </div>
     <p class="new_p2"><span @click="topage(lastpage)" v-if="lastpage">{{lastpage.title}}</span><span class="fr" @click="topage(nextpage)"  v-if="nextpage">{{nextpage.title}}</span></p>
     <p class="new_p4">更多新闻动态</p>

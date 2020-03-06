@@ -194,7 +194,6 @@ export default {
         this.$store.commit("Company",res.data.list[i])
         this.partener =res.data.list[i].company_imgsurlarr
         this.logoimg =res.data.list[i].logo_url
-        console.log(this.partener)
       })
     },
     swiperCover(){

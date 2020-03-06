@@ -1,15 +1,11 @@
-# 叁猿网络科技有限公司-官网
+# official_website_html
 
-> 基于vue-cli，vuex，vue-router，vue-axios，Element-ui，animate动画搭建的官网项目
+> A Vue.js project
 
-
-![image](https://github.com/cxj20150214/vue-test/blob/master/src/img/wxjt.png?raw=true)
-
-![image](https://github.com/cxj20150214/vue-test/blob/master/src/img/wxjt2.png?raw=true)
-## 启动项目
+## Build Setup
 
 ``` bash
-# 安装依赖包
+# install dependencies
 npm install
 
 # serve with hot reload at localhost:8080

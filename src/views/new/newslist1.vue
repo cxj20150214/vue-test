@@ -13,7 +13,7 @@
             <div class="new_text">
                {{newinf.description.substring(0,120)}}...
             </div>
-            <p class="new_a"><span v-for="tag in newinf.tag_id">{{tag}}</span></p>
+            <p class="new_a"><span v-for="tag in newinf.tag_name">{{tag}}</span></p>
             <p class="new_see"><img src="../../img/newimg3.png"/>{{newinf.clicknum}}</p>
 
         </div>

@@ -22,7 +22,8 @@ export default {
     namme:'case1',
     data(){
         return{
-            list:[]
+            list:[],
+            caseId:'',
         }
     },
     methods:{
@@ -34,9 +35,9 @@ export default {
         },
         thisCase:function(list){
             return this.list.filter(function(item){
-                return item.category_id ==1
+                return item.category_id === "25"
             })
-        }
+        },
     },
     mounted(){
         this.getCase();

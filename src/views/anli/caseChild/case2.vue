@@ -9,7 +9,7 @@
                 </div>
                 <div class="txt_box wow animated fadeInRight">
                     <h2>{{item.title}}</h2>
-                    <p>{{item.content}}</p>
+                    <p>{{item.description}}</p>
                     <div class="detail"><router-link :to="{path:'caseDetail',query:{ id:item.id}}">查看详情</router-link></div>
                 </div>
             </li>
@@ -34,7 +34,7 @@ export default {
         },
         thisCase:function(list){
             return this.list.filter(function(item){
-                return item.category_id ==3
+                return item.category_id ==25
             })
         }
     },

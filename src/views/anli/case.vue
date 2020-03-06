@@ -4,47 +4,12 @@
         <div class="case_bg"></div>
         <div class="con case_tabs">
             <ul class="list wow animated fadeInDown">
-                <li :class="{active:shows==1}" @click="ashow()">
-                    <router-link to="/case/case1" active-class="active" exact>
+                <li  v-for="item in caselist" >
+                    <router-link :to="item.url" active-class="active" exact>
                         <div class="box">
-                            <p>开发网站</p>
+                            <p>{{item.name}}</p>
                         </div>
                     </router-link>
-                </li>
-                <li :class="{active:shows==2}" @click="bshow()">
-                    <router-link to="/case/case2">
-                    <div class="box">
-                        <p>微信公众号</p>
-                    </div>
-                    </router-link>
-                </li>
-                <li :class="{active:shows==3}" @click="cshow()">
-                <router-link to="/case/case3">
-                    <div class="box">
-                        <p>微信小程序</p>
-                    </div>
-                </router-link>
-                </li>
-                <li :class="{active:shows==4}" @click="dshow()">
-                <router-link to="/case/case4">
-                    <div class="box">
-                        <p>移动APP</p>
-                    </div>
-                </router-link>
-                </li>
-                <li :class="{active:shows==5}" @click="eshow()">
-                <router-link to="/case/case5">
-                    <div class="box">
-                        <p>优化项目</p>
-                    </div>
-                </router-link>
-                </li>
-                <li :class="{active:shows==6}" @click="fshow()">
-                <router-link to="/case/case6">
-                    <div class="box">
-                        <p>网络推广</p>
-                    </div>
-                </router-link>
                 </li>
             </ul>
             <div class="router_box">
@@ -61,30 +26,39 @@ export default {
     data(){
         return{
             shows:1,
+            caselist:[
+                {
+                    name:"网站开发",
+                    url:"/case/case1",
+                },
+                {
+                    name:"微信公众号",
+                    url:"/case/case2",
+                },
+                {
+                    name:"微信小程序",
+                    url:"/case/case3",
+                },
+                {
+                    name:"移动APP",
+                    url:"/case/case4",
+                },
+                {
+                    name:"优化项目",
+                    url:"/case/case5",
+                },
+                {
+                    name:"网络推广",
+                    url:"/case/case6",
+                },
+            ]
         }
     },
     components:{
         foot
     },
     methods:{
-        ashow:function(){
-            this.shows=1;
-        },
-        bshow:function(){
-            this.shows=2;
-        },
-        cshow:function(){
-            this.shows=3;
-        },
-        dshow:function(){
-            this.shows=4;
-        },
-        eshow:function(){
-            this.shows=5;
-        },
-        fshow:function(){
-            this.shows=6;
-        }
+
     },
     mounted(){
          new WOW().init()

@@ -1,24 +1,16 @@
 <template>
     <div class="con case_detail">
         <ul class="list">
-            <li>
-                <div class="bg">
-                    <div></div>
+            <li v-for="item in thisCase(list)" >
+                <div class="bg wow animated fadeInLeft">
+                    <div class="img_box">
+                        <img v-lazy="item.thumbnail_url" alt="">
+                    </div>
                 </div>
-                <div class="txt_box">
-                    <h2>开发网站建设内容</h2>
-                    <p>叁猿网络专业开发网站，等你来！</p>
-                    <div class="detail"><router-link to="/">查看详情</router-link></div>
-                </div>
-            </li>
-            <li>
-                <div class="bg">
-                    <div></div>
-                </div>
-                <div class="txt_box">
-                    <h2>开发网站建设内容</h2>
-                    <p>叁猿网络专业开发网站，等你来！</p>
-                    <div class="detail"><router-link to="/">查看详情</router-link></div>
+                <div class="txt_box wow animated fadeInRight">
+                    <h2>{{item.title}}</h2>
+                    <p>{{item.description}}</p>
+                    <div class="detail"><router-link :to="{path:'caseDetail',query:{ id:item.id}}">查看详情</router-link></div>
                 </div>
             </li>
         </ul>
@@ -26,7 +18,30 @@
 </template>
 <script>
 export default {
-    
+    namme:'case2',
+    data(){
+        return{
+            list:[]
+        }
+    },
+    methods:{
+        getCase:function(){
+            this.$axios.get('/api/cases/list')
+            .then((res) =>{
+                this.list = res.data.list
+                console.log(res)
+            })
+        },
+        thisCase:function(list){
+            return this.list.filter(function(item){
+                return item.category_id ==25
+            })
+        }
+    },
+    mounted(){
+        this.getCase();
+        this.thisCase();
+    }
 }
 </script>
 <style lang="less" scoped>
@@ -45,6 +60,17 @@ export default {
                 background-image: url(../../../img/pc_img.png);
                 background-repeat: no-repeat;
                 float: left;
+                position: relative;
+                    .img_box{
+                        width: 510px;
+                        height: 320px;
+                        margin: 22px auto;
+                        overflow: hidden;
+                        border-radius:10px;
+                        img{
+                            width:100%;
+                        }
+                    }
                 }
             .txt_box{
                 width:390px;
@@ -69,6 +95,7 @@ export default {
                     border: 2px solid #429FFF;
                     a{
                         color:#429FFF;
+                        display: block;
                     }
                 }
             }
