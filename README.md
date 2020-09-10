@@ -3,6 +3,8 @@
 > A Vue.js project
 
   ![](https://github.com/cxj20150214/vue-test/blob/master/src/img/wxjt.png?raw=true)
+  
+  ![](https://github.com/cxj20150214/vue-test/blob/master/src/img/wxjt2.png?raw=true)
 
 ## Build Setup
 
